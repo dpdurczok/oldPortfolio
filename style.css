@@ -1,78 +1,57 @@
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
-  background-color: #DFBBB1;
+  background-color: #9E9E9E;
 }
 
-.topnav {
-  overflow: hidden;
-  background-color: #333;
-}
-
-.topnav a{	
-	float: left;
-	color: #f2f2f2;
-	text-align: center;
-	padding: 14px 16px;
-	text-decoration: none;
-	font-size: 17px;
-	border-radius: 50%;
-}
-
-.topnav a:hover {
-	background-color: #ddd;
-	color: black;
-}
-.topnav a.active {
-	background-color: #04AA6D;
-	color: white;
-}
-
-.page{
+.TriBackroundLeft{
 	position: absolute;
-	left: 10%;
-	margin: 100px;
-	width: 1000px;
-	height: 500px;
+	margin: auto;
+	background-color: #FCFFFF;
+	top: 0px;
+	left: 90px;
+	height: 800px;
+	width: 700px;
+	box-shadow: 0px 7px #AFAFAF, 7px 0px #AFAFAF, 7px 7px #AFAFAF;
+}
+.TriBackroundLeft::before{
+	content: "";
+	position: absolute;
+	border-bottom: 807px solid #AFAFAF;
+	border-right: 303px solid transparent;
+	top: 0px;
+	left: 707px;
 }
 
-.home{
-	position: relative;
-	top: 300px;
-	width: 450px;
-	float: left;
+.TriBackroundLeft::after{
+	content: "";
+	position: absolute;
+	border-bottom: 800px solid #FCFFFF;
+	border-right: 300px solid transparent;
+	top: 0px;
+	left: 700px;
 }
 
-
-.home a{
-	margin: 100px;
-	height: 150px;
-	width: 150px;
-	display: table-cell;
-	text-align: center;
-	vertical-align: middle;
-	border-radius: 50%;
-	color: #F7F9F7;
-	font-weight: bold;
-	font-size: 15px;
-	text-decoration: none;
+.TriBackroundRight{
+	position: absolute;
+	margin: auto;
+	background-color: #FCFFFF;
+	top: 0px;
+	left: 1120px;
+	height: 800px;
+	width: 700px;
+	box-shadow: 0px 7px #AFAFAF, 7px 0px #AFAFAF, 7px 7px #AFAFAF;
 }
 
-/*table-cell inline-table*/
-
-.home a:hover{
-	background-color: #ddd;
-	color: black;
-}
-
-.ArtC{
-  	background: #28536B;
-}
-.GamesC{
-	background: #315C2B;
-}
-.ProjectsC{
- 	background: #C84630; 	
+.TriBackroundRight::after{
+	content: "";
+	position: absolute;
+	border-bottom: 800px solid #FCFFFF;
+	border-right: 300px solid transparent;
+	transform: scale(-1.0);
+	top: 0px;
+	right: 700px;
+	z-index: 0;
 }
 
 .Profile{
@@ -89,3 +68,66 @@ body {
 	text-align: center;
 }
 
+.TriBackroundRight h1{
+	position: absolute;
+	font-weight: lighter;
+	font-family: sans-serif;
+	color: #7533FF;
+	font-size: 90px;
+	right: 400px;
+	z-index: 1;
+}
+.TriBackroundRight h2{
+	position: absolute;
+	font-weight: bold;
+	font-family: sans-serif;
+	white-space: nowrap;
+	color: black;
+	font-size: 40px;
+	right: 465px;
+	top: 135px;
+	z-index: 1;
+}
+
+.Sliders{
+	position: absolute;
+	margin: auto;
+	background-color: #192425;
+	height: 140px;
+	width: 140px;
+}
+.Sliders:hover:after{
+	border-right: 55px solid #7533FF;
+	border-bottom: 140px solid transparent;
+}
+.Sliders:hover{
+	background-color: #7533FF;
+}
+.Sliders::after{
+	content: "";
+	position: absolute;
+	border-right: 55px solid #192425;
+	border-bottom: 140px solid transparent;
+	top: 0px;
+	right: 140px;
+	z-index: 1;
+}
+
+.S1{
+	position: absolute;
+	top: 260px;
+	right: 600px;
+	z-index: 1;
+}
+.S2{
+	position: absolute;
+	top: 425px;
+	right: 535px;
+	z-index: 1;
+}
+.S3{
+	position: absolute;
+	top: 590px;
+	right: 470px;
+	z-index: 1;	
+}
