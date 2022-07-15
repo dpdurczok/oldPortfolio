@@ -1,7 +1,7 @@
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
-  background-color: #9E9E9E;
+  background-color: grey;
 }
 
 .TriBackroundLeft{
@@ -58,21 +58,64 @@ body {
 	width: 400px;
 	height: 500px;
 	float: left;
+	position: absolute;
+	left:  150px;
+	top: -10;
+	z-index: 1;
 }
-.Profile div{
+
+.MeImg{
 	border-radius: 50%;
-	overflow: hidden;
+	overflow: visible;
+}
+.Outline{
+	position: absolute;
+	top: 150px;
+	left: -40px;
+	background-color: #192425;
+	height: 500px;
+	width: 500px;
+	padding: 5px;
+	border-radius: 50%;
 }
 .Profile span{
 	font-weight: bold;
 	text-align: center;
 }
-
+.Profile h1{
+	position: absolute;
+	right: -90px;
+	top: -15px;
+	font-size: 70px;
+	font-weight: bolder;
+	font-family: monospace, sans-serif;
+	white-space: nowrap;
+}
+.Profile h2{
+	position: absolute;
+	top: 75px;
+	right: 75px;
+	font-size: 25px;
+	font-family: monospace;
+	white-space: nowrap;
+}
+.TextAboutMe{
+	position: absolute;
+	left: -40px;
+	top: 660px;
+	width: 800px;
+	height: 130px;
+}
+.Profile p{
+	position: absolute;
+	top: 0px;
+	font-size: 20px;
+}
 .TriBackroundRight h1{
 	position: absolute;
 	font-weight: lighter;
 	font-family: sans-serif;
-	color: #7533FF;
+	color: #692EE6;
 	font-size: 90px;
 	right: 400px;
 	z-index: 1;
@@ -84,7 +127,7 @@ body {
 	white-space: nowrap;
 	color: black;
 	font-size: 40px;
-	right: 465px;
+	right: 470px;
 	top: 135px;
 	z-index: 1;
 }
@@ -97,11 +140,11 @@ body {
 	width: 140px;
 }
 .Sliders:hover:after{
-	border-right: 55px solid #7533FF;
+	border-right: 55px solid #692EE6;
 	border-bottom: 140px solid transparent;
 }
 .Sliders:hover{
-	background-color: #7533FF;
+	background-color: #692EE6;
 }
 .Sliders::after{
 	content: "";
@@ -112,7 +155,6 @@ body {
 	right: 140px;
 	z-index: 1;
 }
-
 .S1{
 	position: absolute;
 	top: 260px;
@@ -130,4 +172,61 @@ body {
 	top: 590px;
 	right: 470px;
 	z-index: 1;	
+}
+.SliderWord{
+	position: absolute;
+	right: 10px;
+	top: 40px;
+	height: 50px;
+	width: 50px;
+	text-align: right;
+	direction: rtl;
+}
+.Sliders a{
+	text-decoration: none;
+	color: white;
+	width: 10px;
+	font-size: 20px;
+	font-weight: bolder;
+
+}
+.BottomBar{
+	position: absolute;
+	top: 865px;
+	background-color: #692EE6;
+	bottom: 0px;
+	left: 20px;
+	right: 20px;
+	border-radius: 10px;
+}
+.Info{
+	float: left;
+	margin-top: 30px;
+	color: white;
+	font-weight: bold;
+}
+.GitLink{
+	position: absolute;
+	left: 30%;
+}
+.Contact{
+	position: absolute;
+	left: 50%;
+}
+.FollowLinks{
+	position: absolute;
+	left: 70%;
+}
+.Info p{
+	position: absolute;
+	top: 5px;
+	font-weight: lighter;
+}
+.Info a{
+	position: absolute;
+	top: 20px;
+	font-weight: lighter;
+	text-decoration: none;
+	color: white;
+	left: 0px;
 }
