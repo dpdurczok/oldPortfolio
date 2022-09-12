@@ -19,9 +19,12 @@ body {
 	top: 50px;
 	height: 600px;
 	background-color: #FCFFFF;
-	overflow: hidden;
-	
+	overflow-x: scroll;
+	overflow-y: hidden;
 	font-size: 40px;
+}
+.ArtWork::-webkit-scrollbar{
+	display: none;
 }
 .SideNav{
 	position: fixed;
