@@ -8,53 +8,22 @@
 
 <body>
 
-	<div class="WhiteBackground">
-		<div class="ArtWork">
-			<img class ="data-enlargable" src="../Pictures/coffee.png " 
-			alt="Error loading image" style='height:100%; object-fit: contain; float:left'
-			onclick="openImg()" style="cursor: pointer" loading="lazy"/>
-			<div id="OpenImg" class="openedImg" onclick="closeImg()" style="cursor: pointer">
-				<img src="../Pictures/coffee.png " loading="lazy"/>
-			</div>
-		</div>
-		
-		<div class="ArtWork">
-			<img src="../Pictures/baterry.png" 
-				alt="Error loading image" style='height:100%; object-fit: contain; float:left'
-				loading="lazy"/>
-			<p></p>
-		</div>
-		<div class="ArtWork">
-			<img src="../Pictures/ramen.png" 
-				alt="Error loading image" style='height:100%; object-fit: contain; float:left'
-				loading="lazy"/>
-			<p></p>
-		</div>
-		<div class="ArtWork">
-			<img src="../Pictures/kitchen.png" 
-				alt="Error loading image" style='height:100%; object-fit: contain; float:left'
-				loading="lazy"/>
-			<p></p>
-		</div>
-		<div class="ArtWork">
-			<img src="../Pictures/car.png" 
-				alt="Error loading image" style='height:100%; object-fit: contain; float:left'
-				loading="lazy"/>
-			<p></p>
-		</div>
-		<div class="ArtWork">
-			<img src="../Pictures/jellyrender.png" 
-				alt="Error loading image" style='height:100%; object-fit: contain; float:left'
-				loading="lazy"/>
-			<p></p>
-		</div>
-		<div class="ArtWork">
-			<img src="../Pictures/wine.png" 
-				alt="Error loading image" style='height:100%; object-fit: contain; float:left'
-				loading="lazy"/>
-			<p></p>
-		</div>
+<div class="container">
+
+	<div class="image-container">
+		<div class="image"><img src="../Pictures/coffee.png" alt=""></div>
+		<div class="image"><img src="../Pictures/bee.png" alt=""></div>
+		<div class="image"><img src="../Pictures/car.png" alt=""></div>
+		<div class="image"><img src="../Pictures/jellyrender.png" alt=""></div>
+		<div class="image"><img src="../Pictures/baterry.png" alt=""></div>
+		<div class="image"><img src="../Pictures/wine.png" alt=""></div>
 	</div>
+
+	<div class="popup-image">
+		<span>&times;</span>
+		<img src="../Pictures/coffee.png" alt="">
+	</div>
+</div>
 
 	<div class="SideNav">
 		<div class="SideNavHome SideNavs" onclick="location.href='../index.html';" style="cursor: pointer">
@@ -73,15 +42,21 @@
 
 
 <script>
+	
+document.querySelectorAll('.image-container img').forEach(image =>{
+	image.onclick = () =>{
+		document.querySelector('.popup-image').style.display = 'block';
+		document.querySelector('.popup-image img').src = image.getAttribute('src');
+	}
+});
 
-function openImg(){
-	document.getElementById("OpenImg").style.width = "100%";
-}
-function closeImg(){
-	document.getElementById("OpenImg").style.width = "0%";
+document.querySelector('.popup-image span').onclick = () =>{
+	document.querySelector('.popup-image').style.display = 'none';
 }
 
 </script>
+
+
 </body>
 </html>
 
