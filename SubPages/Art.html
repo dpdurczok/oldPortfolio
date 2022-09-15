@@ -10,39 +10,48 @@
 
 	<div class="WhiteBackground">
 		<div class="ArtWork">
-			<img src="../Pictures/coffee.png" 
-			alt="Error loading image" style='height:100%; object-fit: contain; float:left'</img>
-			<p> </p>
+			<img class ="data-enlargable" src="../Pictures/coffee.png " 
+			alt="Error loading image" style='height:100%; object-fit: contain; float:left'
+			onclick="openImg()" style="cursor: pointer" loading="lazy"/>
+			<div id="OpenImg" class="openedImg" onclick="closeImg()" style="cursor: pointer">
+				<img src="../Pictures/coffee.png " loading="lazy"/>
+			</div>
 		</div>
 		
 		<div class="ArtWork">
 			<img src="../Pictures/baterry.png" 
-				alt="Error loading image" style='height:100%; object-fit: contain; float:left'</img>
+				alt="Error loading image" style='height:100%; object-fit: contain; float:left'
+				loading="lazy"/>
 			<p></p>
 		</div>
 		<div class="ArtWork">
 			<img src="../Pictures/ramen.png" 
-				alt="Error loading image" style='height:100%; object-fit: contain; float:left'</img>
+				alt="Error loading image" style='height:100%; object-fit: contain; float:left'
+				loading="lazy"/>
 			<p></p>
 		</div>
 		<div class="ArtWork">
 			<img src="../Pictures/kitchen.png" 
-				alt="Error loading image" style='height:100%; object-fit: contain; float:left'</img>
+				alt="Error loading image" style='height:100%; object-fit: contain; float:left'
+				loading="lazy"/>
 			<p></p>
 		</div>
 		<div class="ArtWork">
 			<img src="../Pictures/car.png" 
-				alt="Error loading image" style='height:100%; object-fit: contain; float:left'</img>
+				alt="Error loading image" style='height:100%; object-fit: contain; float:left'
+				loading="lazy"/>
 			<p></p>
 		</div>
 		<div class="ArtWork">
 			<img src="../Pictures/jellyrender.png" 
-				alt="Error loading image" style='height:100%; object-fit: contain; float:left'</img>
+				alt="Error loading image" style='height:100%; object-fit: contain; float:left'
+				loading="lazy"/>
 			<p></p>
 		</div>
 		<div class="ArtWork">
 			<img src="../Pictures/wine.png" 
-				alt="Error loading image" style='height:100%; object-fit: contain; float:left'</img>
+				alt="Error loading image" style='height:100%; object-fit: contain; float:left'
+				loading="lazy"/>
 			<p></p>
 		</div>
 	</div>
@@ -62,6 +71,17 @@
 		</div>
 	</div>
 
+
+<script>
+
+function openImg(){
+	document.getElementById("OpenImg").style.width = "100%";
+}
+function closeImg(){
+	document.getElementById("OpenImg").style.width = "0%";
+}
+
+</script>
 </body>
 </html>
 
