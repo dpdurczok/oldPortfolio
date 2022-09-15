@@ -46,7 +46,7 @@ body {
 .container .popup-image span{
 	position: absolute;
 	top: 0;, right:  10px;
-	font-size: 60px;
+	font-size: 150px;
 	font-weight: bolder;
 	color: #fff;
 	cursor: pointer;
