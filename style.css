@@ -6,7 +6,7 @@ body {
 
 .container{
 	position: relative;
-	min-height: 100vh;
+	min-height: 200vh;
 	margin-left: 120px;
 	margin-right: 50px;
 	background-color: #ddd;
@@ -58,7 +58,7 @@ body {
 	transform: translate(-50%, -50%);
 	border: 5px solid #fff;
 	border-radius: 5px;
-	width: 750px;
+	height: 750px;
 	object-fit: cover;
 }
 @media (max-width: 768px){
@@ -66,6 +66,49 @@ body {
 		width: 95%;
 	}
 }
+
+.container .game-container{
+	justify-content: center;
+	padding: 10px;
+}
+.container .game-container .game-description{
+	margin-left: 30px;
+	margin-bottom: 50px;
+}
+.container .game-container .game-description .image{
+	height: 350px;
+	width:  40%;
+	border: 10px spolid #fff;
+	overflow: hidden;
+	float:  left;
+
+}
+.container .game-container .game-description .image img{
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	padding-top: 20px;
+}
+.container .game-container .game-description .image span{
+	text-decoration: none;
+	color: #192425;
+	width: 10px;
+	font-size: 30px;
+	font-weight: bolder;
+}
+@media (max-width: 768px){
+	.container .game-container .game-description .image{
+		width: 95%;
+	}
+}
+.container .game-container .text{
+	height: 295px;
+	width:  58%;
+	border: 10px spolid #fff;
+	float:  right;
+	margin-top: 55px;
+	font-size: 20px;
+} 
 
 
 .SideNav{
